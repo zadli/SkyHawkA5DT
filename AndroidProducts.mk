@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_a5y17lte.mk
+    $(LOCAL_DIR)/lineage_a5y17lte.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_a5y17lte-userdebug \
-    omni_a5y17lte-user \
-    omni_a5y17lte-eng
+    lineage_a5y17lte-userdebug \
+    lineage_a5y17lte-user \
+    lineage_a5y17lte-eng
