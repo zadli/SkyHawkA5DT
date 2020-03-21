@@ -1,11 +1,11 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018 The TwrpBuilder Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+# http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,15 +14,5 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/a5y17lte
-
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-# System.prop
-TARGET_SYSTEM_PROP += device/samsung/a5y17lte/system.prop
-
-# call the common setup
-$(call inherit-product, device/samsung/universal7880-common/common.mk)
-
-# call the proprietary setup
-$(call inherit-product, vendor/samsung/a5y17lte/a5y17lte-vendor.mk)
+LOCAL_PATH := device/samsung/a5y17lte/
+include $(call all-makefiles-under,$(LOCAL_PATH))
